@@ -3,6 +3,7 @@
   padding-bottom: 162px;
   display: flex;
   flex-direction: column;
+  gap: 300px;
   background-color: rgba(35, 48, 0, 1);
   color: white;
 }
@@ -17,12 +18,12 @@
   z-index: 1;
 
   h1 {
-    @include font(135, 130);
+    @include font(100, 110);
     font-weight: 700;
-    width: 1056px;
+    width: 1000px;
   }
   h2 {
-    @include font(80, 90);
+    @include font(60, 80);
     font-weight: 500;
     width: 565px;
   }
@@ -31,8 +32,36 @@
     top: 15%;
     right: 0;
     z-index: -1;
-    width: 800px;
-    height: 800px;
+    width: 650px;
+    height: 650px;
     opacity: 0.8;
   }
+}
+
+.wrapper-content {
+  display: flex;
+  justify-content: space-between;
+  img {
+    opacity: 0.9;
+  }
+}
+
+.place {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 700px;
+  height: 500px;
+
+  h3 {
+    @include font(48, 64);
+    font-weight: 700;
+  }
+}
+
+.lamp {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 450px;
 }
