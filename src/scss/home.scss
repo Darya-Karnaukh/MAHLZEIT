@@ -1,0 +1,38 @@
+.home {
+  padding-top: 112px;
+  padding-bottom: 162px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(35, 48, 0, 1);
+  color: white;
+}
+
+.wrapper-title-home {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  word-wrap: break-word;
+  position: relative;
+  z-index: 1;
+
+  h1 {
+    @include font(135, 130);
+    font-weight: 700;
+    width: 1056px;
+  }
+  h2 {
+    @include font(80, 90);
+    font-weight: 500;
+    width: 565px;
+  }
+  img {
+    position: absolute;
+    top: 15%;
+    right: 0;
+    z-index: -1;
+    width: 800px;
+    height: 800px;
+    opacity: 0.8;
+  }
+}
