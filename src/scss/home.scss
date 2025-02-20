@@ -1,39 +1,44 @@
 .home {
-  padding-top: 112px;
+  padding-top: 200px;
   padding-bottom: 162px;
-  display: flex;
-  flex-direction: column;
-  gap: 300px;
+
   background-color: rgba(35, 48, 0, 1);
   color: white;
+  width: 100%;
+}
+
+.home .container {
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
 }
 
 .wrapper-title-home {
   display: flex;
   flex-direction: column;
-  gap: 40px;
-
-  word-wrap: break-word;
+  gap: 60px;
   position: relative;
   z-index: 1;
 
   h1 {
-    @include font(100, 110);
-    font-weight: 700;
-    width: 1000px;
+    text-align: start;
+    @include font(120, 130);
+    font-weight: 500;
+    width: 800px;
   }
   h2 {
-    @include font(60, 80);
+    text-align: end;
+    @include font(50, 60);
     font-weight: 500;
-    width: 565px;
+    width: 600px;
   }
   img {
     position: absolute;
     top: 15%;
-    right: 0;
+    right: -5%;
     z-index: -1;
-    width: 650px;
-    height: 650px;
+    width: 690px;
+    height: 730px;
     opacity: 0.8;
   }
 }

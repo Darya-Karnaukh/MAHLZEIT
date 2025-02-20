@@ -1,32 +1,50 @@
 .header {
-  width: 1920px;
-  height: 208px;
   background-color: rgba(35, 48, 0, 1);
+  padding: 16px 0px;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  z-index: 1000;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+.navigation {
+  display: flex;
+  gap: 300px;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .nav-list {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
-
-  @include media(tablet) {
-    justify-content: flex-start;
-  }
-
-  @include media(desktop) {
-    justify-content: flex-end;
-  }
+  gap: 20px;
 }
 
 .nav-link {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  @include font(30, 40);
-  color: $_header_color;
+  width: 160px;
+  padding: 10px 0;
+  border: 1px solid white;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-family: Rufina;
+  color: white;
+  word-wrap: break-word;
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease;
+  @include font(25, 40);
+  outline: none;
 }
 
 .nav-link:hover,
 .nav-link:focus {
-  color: $_header_accent_color;
+  background-color: #5e6600;
+  color: #fff8e6;
+  border-color: #fff8e6;
 }
