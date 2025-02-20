@@ -14,78 +14,119 @@
     <script type="module" crossorigin src="/MAHLZEIT/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/MAHLZEIT/assets/vendor-c2e1d5e3.js">
     <link rel="stylesheet" href="/MAHLZEIT/assets/vendor-264cd56a.css">
-    <link rel="stylesheet" href="/MAHLZEIT/assets/index-7d49732e.css">
+    <link rel="stylesheet" href="/MAHLZEIT/assets/index-18f7c385.css">
   </head>
   <body>
-    <header class="header container"></header>
+    <header class="header">
+  <nav class="navigation">
+    <a href="/" class="logo">
+      <svg
+        width="200"
+        height="115"
+        viewBox="0 0 307 115"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M57 2H245V27H247V2V0H245H57H55V2V27H57V2ZM57 87H55V113V115H57H245H247V113V87H245V113H57V87Z"
+          fill="white"
+        />
+        <text
+          x="49%"
+          y="65%"
+          font-size="50"
+          font-family="Arial, sans-serif"
+          fill="white"
+          text-anchor="middle"
+        >
+          MAHLZEIT
+        </text>
+      </svg>
+    </a>
 
-    <section class="home container">
-  <div class="wrapper-title-home">
-    <h1>Hausgemachte ukrainische Küche in Deutschland:</h1>
-    <h2>Traditionen mit Herz geschaffen</h2>
-    <img src="/MAHLZEIT/assets/main-image-c5e6abd1.jpg" alt="Main image" />
-  </div>
+    <ul class="nav-list">
+      <li class="nav-link"><a href="#home">Startseite</a></li>
+      <li class="nav-link"><a href="#menu">Menü</a></li>
+      <li class="nav-link"><a href="#story">Über uns</a></li>
+      <li class="nav-link"><a href="#gallery-menu">Galerie</a></li>
+      <li class="nav-link"><a href="#contact">Kontakt</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <div class="wrapper-content">
-    <div class="place">
-      <img src="gallery/full/1.jpg" alt="place" />
-      <h3>Ein Geschmack, der an Zuhause erinnert</h3>
-      <p>
-        Unsere Gerichte werden mit Liebe und nach authentischen ukrainischen
-        Rezepten zubereitet
-      </p>
+    <section id="home" class="home">
+  <div class="container">
+    <div class="wrapper-title-home">
+      <h1>Hausgemachte ukrainische Küche in Deutschland:</h1>
+      <h2>Traditionen mit Herz geschaffen</h2>
+      <img src="/MAHLZEIT/assets/main-image-c5e6abd1.jpg" alt="Main image" />
     </div>
-    <div class="lamp">
-      <p>
-        Wir verwenden nur die besten Gewürze, um den echten Geist der
-        ukrainischen Küche zu bewahren
-      </p>
-      <img src="gallery/full/2.jpg" alt="lamp" />
+
+    <div class="wrapper-content">
+      <div class="place">
+        <img src="gallery/full/1.jpg" alt="place" />
+        <h3>Ein Geschmack, der an Zuhause erinnert</h3>
+        <p>
+          Unsere Gerichte werden mit Liebe und nach authentischen ukrainischen
+          Rezepten zubereitet
+        </p>
+      </div>
+      <div class="lamp">
+        <p>
+          Wir verwenden nur die besten Gewürze, um den echten Geist der
+          ukrainischen Küche zu bewahren
+        </p>
+        <img src="gallery/full/2.jpg" alt="lamp" />
+      </div>
     </div>
   </div>
 </section>
 
-    <section class="menu container">
-  <div class="leaves-top"></div>
-  <div>
-    <div class="wrapper-text-menu">
-      <h2>Unser Menü</h2>
-      <p>
-        Entdecken Sie unsere vielfältige Auswahl an hausgemachten ukrainischen
-        Gerichten. Ob für den Alltag oder für besondere Anlässe – wir haben das
-        perfekte Menü für Sie
-      </p>
-    </div>
-    <ul class="menu-list">
-      <li class="menu-item">
-        <p class="price">6 €</p>
-        <h3>
-          Zucchinipfannkuchen gefüllt mit Hühnerfleisch, Champignons und Käse
-        </h3>
-      </li>
-      <li class="menu-item">
-        <p class="price">2,20 €</p>
-        <h3>Kohlrouladen in Tomatensauce</h3>
+    <section id="menu" class="menu">
+  <div class="container">
+    <div class="leaves-top"></div>
+    <div>
+      <div class="wrapper-text-menu">
+        <h2>Unser Menü</h2>
         <p>
-          Rindfleisch, Schweinefleisch, Reis, Kohl, Zwiebeln, Karotten,
-          Tomatenmark, Salz, Gewürze
+          Entdecken Sie unsere vielfältige Auswahl an hausgemachten ukrainischen
+          Gerichten. Ob für den Alltag oder für besondere Anlässe – wir haben
+          das perfekte Menü für Sie
         </p>
-      </li>
-      <li class="menu-item">
-        <p class="price">3,50 €</p>
-        <h3>Kiewer Kotelett</h3>
-        <p>Hähnchenbrustfilet, Butter, Ei, Salz, Pfeffer, Öl</p>
-      </li>
-      <li class="menu-item">
-        <p class="price">6 €</p>
-        <h3>Brizol mit Gemüse und Käse</h3>
-      </li>
-    </ul>
+      </div>
+      <ul class="menu-list">
+        <li class="menu-item">
+          <p class="price">6 €</p>
+          <h3>
+            Zucchinipfannkuchen gefüllt mit Hühnerfleisch, Champignons und Käse
+          </h3>
+        </li>
+        <li class="menu-item">
+          <p class="price">2,20 €</p>
+          <h3>Kohlrouladen in Tomatensauce</h3>
+          <p>
+            Rindfleisch, Schweinefleisch, Reis, Kohl, Zwiebeln, Karotten,
+            Tomatenmark, Salz, Gewürze
+          </p>
+        </li>
+        <li class="menu-item">
+          <p class="price">3,50 €</p>
+          <h3>Kiewer Kotelett</h3>
+          <p>Hähnchenbrustfilet, Butter, Ei, Salz, Pfeffer, Öl</p>
+        </li>
+        <li class="menu-item">
+          <p class="price">6 €</p>
+          <h3>Brizol mit Gemüse und Käse</h3>
+        </li>
+      </ul>
+    </div>
   </div>
   <button class="botton-menu">Zeige mehr</button>
 </section>
 
-    <section class="story">
+    <section id="story" class="story">
   <div class="container">
     <h2>Unsere Story</h2>
     <div class="svg-wrapper-top">
@@ -161,7 +202,7 @@
   </div>
 </section>
 
-    <section class="gallery container">
+    <section id="gallery-menu" class="gallery container">
   <h2>Galerie</h2>
   <div class="swiper mySwiper">
     <div class="swiper-wrapper" id="gallery-container"></div>
@@ -170,7 +211,8 @@
   <div class="swiper-button-prev"></div>
 </section>
 
-    
+    <section id="contact" class="contact"></section>
+
     
     
 
