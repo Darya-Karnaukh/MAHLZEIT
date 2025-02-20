@@ -1,0 +1,122 @@
+.contact {
+  padding-top: 150px;
+  padding-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+  color: #4d4d4d;
+  margin-bottom: 70px;
+
+  h2 {
+    @include font(108, 120);
+    color: black;
+  }
+}
+
+.container-contant {
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+  position: relative;
+}
+
+.wrapper-contact {
+  display: flex;
+  height: 800px;
+
+  img {
+    width: 600px;
+    height: 800px;
+    position: absolute;
+    top: 15%;
+  }
+}
+
+.contact-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.email-phone {
+  display: flex;
+  flex-direction: column;
+  color: #233000;
+  @include font(32, 48);
+  font-weight: 700;
+
+  a {
+    color: #9caa00;
+  }
+}
+
+.wrapper-location {
+  display: flex;
+  height: 800px;
+
+  img {
+    width: 600px;
+    height: 800px;
+    position: absolute;
+    bottom: 5%;
+    right: 0;
+  }
+}
+
+.address-location {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #233000;
+  @include font(32, 48);
+  font-weight: 700;
+  position: absolute;
+  bottom: 15%;
+  left: 5%;
+
+  a {
+    color: #9caa00;
+    margin-bottom: 33px;
+  }
+}
+
+// .btn-map {
+//   width: 176px;
+//   padding-top: 20px;
+//   background-color: transparent;
+//   padding-bottom: 20px;
+//   border: 1px #233000 solid;
+//   justify-content: center;
+//   align-items: center;
+//   gap: 10px;
+//   display: inline-flex;
+//   color: black;
+//   @include font(32, 48);
+//   font-family: Rufina;
+//   font-weight: 700;
+//   word-wrap: break-word;
+//   transition: background-color 0.3s ease, transform 0.2s ease;
+// }
+
+// .btn-map:hover,
+// .btn-map:focus {
+//   background-color: rgba(235, 240, 228, 1);
+// }
+
+// .btn-map:active {
+//   transform: scale(0.98);
+//   background-color: rgba(235, 240, 228, 1);
+// }

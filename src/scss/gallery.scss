@@ -1,10 +1,9 @@
 .gallery {
-  padding-top: 131px;
+  padding-top: 150px;
   text-align: center;
-  padding-bottom: 159px;
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: 130px;
   position: relative;
   h2 {
     @include font(108, 120);
