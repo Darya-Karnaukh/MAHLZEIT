@@ -12,9 +12,9 @@
 
     
     <script type="module" crossorigin src="/MAHLZEIT/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/MAHLZEIT/assets/vendor-c2e1d5e3.js">
+    <link rel="modulepreload" crossorigin href="/MAHLZEIT/assets/vendor-ea3035a3.js">
     <link rel="stylesheet" href="/MAHLZEIT/assets/vendor-264cd56a.css">
-    <link rel="stylesheet" href="/MAHLZEIT/assets/index-98f8eb38.css">
+    <link rel="stylesheet" href="/MAHLZEIT/assets/index-6e9f34b1.css">
   </head>
   <body>
     <header class="header">
@@ -272,7 +272,86 @@
   </div>
 </section>
 
-    
+    <section id="form" class="form-section">
+  <div class="container">
+    <div class="title-form">
+      <h2>LASSEN SIE UNS IN KONTAKT TRETEN</h2>
+      <p>
+        Bestellen Sie, nehmen Sie an Aktionen teil, empfehlen Sie uns Freunden
+        oder treten Sie mit uns in Verbindung.
+      </p>
+    </div>
+
+    <form id="contact-form" class="form-contact">
+      <div class="wrapper-input">
+        <label for="email" class="visually-hidden">Email:</label>
+        <input
+          type="email"
+          required
+          placeholder="E-Mail"
+          class="input-field"
+          id="email"
+        />
+
+        <label for="phone" class="visually-hidden">Phone</label>
+        <input
+          type="tel"
+          id="phone"
+          required
+          placeholder="Telefon +4915123456789"
+          class="input-field"
+          pattern="^\+49\d{1,4}[\s\-]?\d{3,5}[\s\-]?\d{4,6}$"
+        />
+
+        <label for="name" class="visually-hidden">Name:</label>
+        <input
+          type="text"
+          id="name"
+          required
+          placeholder="Name"
+          class="input-field"
+        />
+      </div>
+      <button class="btn-form-contact" type="submit">Senden</button>
+    </form>
+  </div>
+</section>
+
+<div id="success-modal" class="modal">
+  <div class="modal-backdrop">
+    <div class="modal-container">
+      <button id="modal-close-btn" class="button-close" type="button">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 32 32"
+          width="32"
+          height="32"
+        >
+          <path
+            d="M18 6L6 18"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M6 6L18 18"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+      <h3 class="title-modal">Vielen Dank für Ihr Interesse!</h3>
+      <p class="text-modal">
+        Wir werden uns bald mit Ihnen in Verbindung setzen, um alle Details zu
+        besprechen. Bleiben Sie in Kontakt!
+      </p>
+    </div>
+  </div>
+</div>
+
     
 
     
