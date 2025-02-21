@@ -1,0 +1,31 @@
+footer {
+  background-color: rgba(35, 48, 0, 1);
+  padding: 78px 0px;
+  width: 100%;
+}
+
+footer .container {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.wrapper-contact-inform {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.social-media {
+  display: flex;
+  gap: 20px;
+}
+
+.wrapper-working-hours {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  gap: 15px;
+  text-align: end;
+}

@@ -86,7 +86,7 @@
   padding-right: 46px;
   padding-top: 20px;
   padding-bottom: 20px;
-  background: #233000;
+  background: rgba(94, 102, 0, 1);
   border: none;
   justify-content: center;
   align-items: center;
@@ -103,10 +103,10 @@
 
 .botton-menu:hover,
 .botton-menu:focus {
-  background-color: #9caa00;
+  background-color: #233000;
 }
 
 .botton-menu:active {
-  background-color: #9caa00;
+  background-color: #233000;
   transform: scale(0.98);
 }
