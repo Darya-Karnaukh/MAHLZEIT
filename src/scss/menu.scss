@@ -80,30 +80,33 @@
 }
 
 .botton-menu {
-  width: 264px;
+  width: 344px;
   height: 88px;
-  padding: 20px 46px;
-  background: #5e6600;
+  padding-left: 46px;
+  padding-right: 46px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #233000;
+  border: none;
   justify-content: center;
   align-items: center;
   gap: 10px;
   display: inline-flex;
-  border: none;
-  cursor: pointer;
   color: white;
   @include font(32, 48);
   font-family: Rufina;
   font-weight: 700;
   word-wrap: break-word;
+  transition: all 0.3s ease-in-out;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .botton-menu:hover,
 .botton-menu:focus {
-  background: rgba(35, 48, 0, 1);
+  background-color: #9caa00;
 }
 
 .botton-menu:active {
-  background: rgba(25, 35, 0, 1);
+  background-color: #9caa00;
   transform: scale(0.98);
 }
