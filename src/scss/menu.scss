@@ -79,7 +79,7 @@
   margin-top: 12px;
 }
 
-.botton-menu {
+.button-menu {
   width: 344px;
   height: 88px;
   padding-left: 46px;
@@ -101,12 +101,12 @@
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.botton-menu:hover,
-.botton-menu:focus {
+.button-menu:hover,
+.button-menu:focus {
   background-color: #233000;
 }
 
-.botton-menu:active {
+.button-menu:active {
   background-color: #233000;
   transform: scale(0.98);
 }
