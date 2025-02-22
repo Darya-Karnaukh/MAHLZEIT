@@ -1,12 +1,11 @@
 footer {
   background-color: rgba(35, 48, 0, 1);
-  padding: 78px 0px;
+  padding: 30px 0px;
   width: 100%;
 }
 
 footer .container {
   display: flex;
-
   justify-content: space-between;
 }
 
@@ -20,6 +19,7 @@ footer .container {
 .social-media {
   display: flex;
   gap: 20px;
+  justify-content: flex-end;
 }
 
 .wrapper-working-hours {
