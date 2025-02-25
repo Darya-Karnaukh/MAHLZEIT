@@ -12,14 +12,14 @@
   z-index: 1000;
 
   @include media(desktop) {
-    padding: 0;
+    padding: 15px;
     width: 1440px;
   }
 }
 
 .logo-svg {
   width: 140px;
-  height: 115px;
+  height: 80px;
   @include media(desktop) {
     width: 180px;
   }
@@ -27,7 +27,7 @@
 .navigation {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-content: center;
   @include media(desktop) {
     gap: 300px;
     justify-content: center;
@@ -69,13 +69,20 @@
 }
 
 .btn-burger-menu {
-  display: flex;
   background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-content: center;
   border: none;
-  width: 80px;
-  height: 100px;
+  padding: 0;
 
   @include media(desktop) {
     display: none;
+  }
+
+  svg {
+    display: block;
+    width: 80px;
+    height: 80px;
   }
 }
