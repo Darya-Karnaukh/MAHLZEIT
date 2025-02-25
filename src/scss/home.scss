@@ -1,9 +1,12 @@
 .home {
-  padding-top: 180px;
+  padding-top: 120px;
   padding-bottom: 162px;
   background-color: rgba(35, 48, 0, 1);
   color: white;
   width: 100%;
+  @include media(desktop) {
+    padding-top: 180px;
+  }
 }
 
 .home .container {
@@ -54,7 +57,7 @@
 
   img {
     position: absolute;
-    top: -10%;
+    top: 15%;
     right: 0%;
     z-index: -3;
     max-width: 300px;
