@@ -37,9 +37,16 @@ document.addEventListener('DOMContentLoaded', function () {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
     breakpoints: {
       640: { slidesPerView: 2, spaceBetween: 20 },
-      1024: { slidesPerView: 3, spaceBetween: 30 },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
     },
   });
 
