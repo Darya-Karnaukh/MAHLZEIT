@@ -1,6 +1,6 @@
 .main-page-menu {
-  padding-top: 250px;
-  padding-bottom: 300px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)),
     url(/gallery/full/5.jpg);
   background-repeat: no-repeat;
@@ -8,45 +8,76 @@
   background-size: cover;
   display: flex;
   position: relative;
+
+  @include media(desktop) {
+    padding-top: 200px;
+    padding-bottom: 300px;
+  }
 }
 
 .title-full-menu {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 50px;
+  gap: 30px;
   color: white;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+
+  @include media(desktop) {
+    margin-bottom: 50px;
+    gap: 30px;
+  }
 
   h1 {
-    @include font(120, 130);
-    font-weight: 500;
+    @include font(48, 60);
+    font-weight: 600;
     color: white;
+    @include media(desktop) {
+      @include font(120, 130);
+      font-weight: 500;
+      color: white;
+    }
+  }
+
+  h2 {
+    @include font(28, 38);
+    text-align: start;
+    width: 320px;
+    font-weight: 500;
+
+    @include media(desktop) {
+      @include font(50, 80);
+      width: 600px;
+    }
   }
 }
 
 .btn-go-home {
   position: absolute;
-  bottom: 10%;
-  right: 10%;
-  width: 300px;
+  bottom: 5%;
+  right: 5%;
   border-radius: 10px;
-  height: 88px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px;
   background: #233000;
   border: none;
+  color: white;
+  @include font(20, 28);
+  font-family: Rufina;
   justify-content: center;
   align-items: center;
   gap: 10px;
   display: inline-flex;
-  color: white;
-  @include font(32, 48);
-  font-family: Rufina;
   font-weight: 700;
-  word-wrap: break-word;
   transition: all 0.3s ease-in-out;
   transition: background-color 0.3s ease, transform 0.2s ease;
+
+  @include media(desktop) {
+    bottom: 10%;
+    right: 10%;
+    width: 300px;
+    border-radius: 10px;
+    @include font(32, 48);
+  }
 }
 
 .btn-go-home:hover,
@@ -60,47 +91,44 @@
 }
 
 .menu-mahlzeit-full {
-  padding-top: 150px;
+  padding-top: 100px;
   padding-bottom: 70px;
+
+  @include media(desktop) {
+    padding-top: 150px;
+  }
 }
 
 .menu-mahlzeit-full .container {
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: 50px;
+
+  @include media(desktop) {
+    gap: 80px;
+  }
 }
 
 .wrapper-text-title {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  text-align: justify;
   gap: 20px;
   color: #4d4d4d;
 
-  h2 {
-    @include font(80, 100);
-    color: black;
+  @include media(desktop) {
+    text-align: center;
   }
-}
 
-.img-menu {
-  position: absolute;
-  width: 600px;
-  height: 480px;
-  top: 26%;
-  left: -2%;
-  border-radius: 10%;
-  object-fit: cover;
-}
+  h2 {
+    color: black;
+    @include font(40, 60);
+    text-align: center;
 
-.img-coffe {
-  position: absolute;
-  width: 600px;
-  height: 480px;
-  top: 26%;
-  right: -2%;
-  border-radius: 10%;
-  object-fit: cover;
+    @include media(desktop) {
+      @include font(80, 100);
+    }
+  }
 }
 
 .food-items {
@@ -110,49 +138,74 @@
 .leaves::after {
   content: '';
   position: absolute;
-  top: 85%;
+  top: 70%;
   right: 0;
-  width: 880px;
-  height: 946px;
+  width: 350px;
+  height: 350px;
+  transform: translateY(50%);
+  background-size: cover;
   background-color: transparent;
   background-image: url(/img/leaves-top.png);
   background-repeat: no-repeat;
   z-index: -1;
   opacity: 0.8;
+
+  @include media(desktop) {
+    width: 880px;
+    height: 946px;
+    top: 90%;
+    right: 0;
+    transform: translateY(20%);
+  }
 }
 
 .leaves-bottom::after {
   content: '';
   position: absolute;
-  top: -1%;
+  top: 24%;
   right: 0%;
   transform: translateY(161%);
-  width: 500px;
-  height: 946px;
+  width: 350px;
+  height: 700px;
   background-color: transparent;
   background-image: url(/img/leaves-bottom.png);
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -2;
   opacity: 0.3;
+
+  @include media(desktop) {
+    width: 500px;
+    height: 946px;
+    top: -1%;
+    right: 0%;
+  }
 }
 
 .svg-wrapper {
   position: absolute;
-  top: 50%;
+  top: 70%;
   right: 0%;
   z-index: -1;
   opacity: 0.6;
+  width: 200px;
+  height: 150px;
+  @include media(desktop) {
+    width: 353px;
+    height: 299px;
+    top: 50%;
+    right: 0%;
+  }
 }
 
 .leaves-salate::after {
   content: '';
   position: absolute;
-  top: 0%;
+  top: 80%;
   left: 0%;
   transform: translateY(0%);
-  width: 500px;
-  height: 946px;
+  width: 350px;
+  height: 700px;
   background-color: transparent;
   background-image: url(/img/leaves-bottom.png);
   background-repeat: no-repeat;
@@ -160,4 +213,43 @@
   z-index: -2;
   opacity: 0.3;
   transform: scaleX(-1);
+
+  @include media(desktop) {
+    top: 0%;
+    left: 0%;
+    width: 500px;
+    height: 946px;
+  }
+}
+
+.svg-leaves {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  z-index: -1;
+  opacity: 0.6;
+  width: 200px;
+  height: 150px;
+  @include media(desktop) {
+    top: 20%;
+    left: 10%;
+    width: 600px;
+    height: 349px;
+  }
+}
+
+.svg-avocado {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  z-index: -1;
+  opacity: 0.6;
+  width: 200px;
+  height: 150px;
+  @include media(desktop) {
+    top: 0%;
+    right: 0%;
+    width: 600px;
+    height: 349px;
+  }
 }

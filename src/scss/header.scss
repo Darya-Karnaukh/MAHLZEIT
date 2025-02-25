@@ -1,28 +1,47 @@
 .header {
   background-color: rgba(35, 48, 0, 1);
-
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
   position: fixed;
   top: 0;
   left: 50%;
-  z-index: 1000;
+  width: 375px;
   transform: translateX(-50%);
-  width: 100%;
+  z-index: 1000;
+
+  @include media(desktop) {
+    padding: 0;
+    width: 1440px;
+  }
 }
 
+.logo-svg {
+  width: 140px;
+  height: 115px;
+  @include media(desktop) {
+    width: 200px;
+  }
+}
 .navigation {
   display: flex;
-  gap: 300px;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
+  @include media(desktop) {
+    gap: 300px;
+    justify-content: center;
+  }
 }
 
 .nav-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
+  display: none;
+  @include media(desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
 }
 
 .nav-link {
@@ -47,4 +66,16 @@
   background-color: #5e6600;
   color: #fff8e6;
   border-color: #fff8e6;
+}
+
+.btn-burger-menu {
+  display: flex;
+  background-color: transparent;
+  border: none;
+  width: 80px;
+  height: 100px;
+
+  @include media(desktop) {
+    display: none;
+  }
 }
