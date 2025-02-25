@@ -21,7 +21,7 @@
   width: 140px;
   height: 115px;
   @include media(desktop) {
-    width: 200px;
+    width: 180px;
   }
 }
 .navigation {
@@ -57,7 +57,7 @@
   word-wrap: break-word;
   transition: background-color 0.3s ease, color 0.3s ease,
     border-color 0.3s ease;
-  @include font(25, 40);
+  @include font(18, 28);
   outline: none;
 }
 

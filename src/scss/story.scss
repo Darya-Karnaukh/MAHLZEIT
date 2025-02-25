@@ -9,7 +9,7 @@
   h2 {
     margin-bottom: 30px;
     text-align: center;
-    @include font(56, 60);
+    @include font(42, 50);
 
     @include media(desktop) {
       width: 1250px;
@@ -71,7 +71,6 @@
 .container-text {
   display: flex;
   flex-direction: column;
-
   gap: 20px;
   width: 330px;
   z-index: 2;
@@ -83,6 +82,7 @@
     text-align: justify;
     color: #4d4d4d;
     word-wrap: break-word;
+    line-height: 1.6;
   }
 }
 

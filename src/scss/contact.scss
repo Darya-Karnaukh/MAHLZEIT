@@ -21,7 +21,7 @@
   h2 {
     text-align: center;
     color: black;
-    @include font(56, 60);
+    @include font(42, 50);
 
     @include media(desktop) {
       @include font(108, 120);
@@ -107,6 +107,7 @@
 
   a {
     color: #9caa00;
+    line-height: 1.6;
   }
 }
 
@@ -157,6 +158,7 @@
 
   a {
     color: #9caa00;
+    line-height: 1.6;
     @include media(desktop) {
       margin-bottom: 33px;
     }
