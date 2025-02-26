@@ -99,9 +99,14 @@
   }
 }
 
+.menu-mahlzeit-full {
+  position: relative;
+}
+
 .menu-mahlzeit-full .container {
   display: flex;
   flex-direction: column;
+
   gap: 50px;
 
   @include media(desktop) {
@@ -135,34 +140,28 @@
   position: relative;
 }
 
-.leaves::after {
-  content: '';
+.leaves {
   position: absolute;
-  top: 70%;
-  right: 0;
+  top: 0%;
+  right: 0%;
   width: 350px;
-  height: 350px;
-  transform: translateY(50%);
   background-size: cover;
+  height: 350px;
   background-color: transparent;
   background-image: url(/img/leaves-top.png);
   background-repeat: no-repeat;
   z-index: -1;
-  opacity: 0.8;
 
   @include media(desktop) {
     width: 880px;
     height: 946px;
-    top: 90%;
-    right: 0;
-    transform: translateY(20%);
   }
 }
 
 .leaves-bottom::after {
   content: '';
   position: absolute;
-  top: 24%;
+  top: 0%;
   right: 0%;
   transform: translateY(161%);
   width: 350px;

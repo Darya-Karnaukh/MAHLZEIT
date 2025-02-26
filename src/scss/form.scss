@@ -12,12 +12,15 @@
 }
 
 .form-section {
-  padding-top: 150px;
+  padding-top: 100px;
   padding-bottom: 70px;
   display: flex;
   flex-direction: column;
   width: 100%;
   background-color: rgba(235, 240, 228, 1);
+  @include media(desktop) {
+    padding-top: 150px;
+  }
 }
 
 .title-form {
@@ -34,7 +37,7 @@
   h2 {
     color: black;
     font-weight: 700;
-    @include font(42, 56);
+    @include font(36, 46);
 
     @include media(desktop) {
       @include font(67, 84);
@@ -64,7 +67,7 @@
 }
 
 .input-field {
-  width: 340px;
+  width: 320px;
   padding: 10px;
   border: 2px black solid;
   background-color: transparent;
@@ -179,6 +182,7 @@
   text-align: center;
   font-family: Rufina;
   @include font(28, 48);
+  line-height: 1.6;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 16px;
