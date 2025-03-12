@@ -1,9 +1,9 @@
 .wrapper-mob-menu {
   display: flex;
-  width: 375px;
   padding: 30px 16px;
+  align-content: center;
+  justify-content: center;
   flex-direction: column;
-  align-items: center;
   gap: 20px;
 }
 
@@ -62,10 +62,13 @@
 .burger-menu {
   position: fixed;
   top: 0;
+  margin-left: auto;
+  margin-right: auto;
   left: 50%;
+  right: 0;
   z-index: 4000;
   transform: translateX(-50%) rotateY(90deg);
-  width: 375px;
+  width: 100%;
   visibility: hidden;
   opacity: 0;
   background: #233000;

@@ -1,15 +1,17 @@
 .gallery {
   padding-top: 150px;
+  padding-bottom: 100px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background: #ebf0e4;
   gap: 80px;
   position: relative;
 
   @include media(desktop) {
-    gap: 130px;
+    gap: 100px;
   }
   h2 {
     @include font(56, 60);
@@ -41,10 +43,9 @@
   display: none;
 
   @include media(desktop) {
-    top: 75%;
+    top: 65%;
     transform: translateY(-50%);
     position: absolute;
-
     z-index: 10;
     width: 70px;
     height: 40px;

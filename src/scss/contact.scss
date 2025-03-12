@@ -113,7 +113,7 @@
 
 .wrapper-location {
   display: flex;
-  height: 400px;
+  height: 500px;
 
   @include media(desktop) {
     height: 800px;
@@ -126,6 +126,7 @@
     top: 70%;
     right: 0;
     border-radius: 10px;
+    object-fit: cover;
 
     @include media(desktop) {
       width: 600px;

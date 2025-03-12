@@ -6,10 +6,10 @@ import 'swiper/swiper-bundle.css';
 
 document.addEventListener('DOMContentLoaded', function () {
   const galleryContainer = document.getElementById('gallery-container');
-  const totalImages = 41;
+  const totalImages = 20;
   const thumbFolder = 'gallery/thumbs/';
   const fullFolder = 'gallery/full/';
-  const fileExtension = '.jpg';
+  const fileExtension = '.jpeg';
 
   for (let i = 1; i <= totalImages; i++) {
     const slide = document.createElement('div');
