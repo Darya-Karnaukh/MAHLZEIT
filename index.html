@@ -14,7 +14,7 @@
     <script type="module" crossorigin src="/MAHLZEIT/commonHelpers2.js"></script>
     <link rel="modulepreload" crossorigin href="/MAHLZEIT/assets/vendor-ea3035a3.js">
     <link rel="stylesheet" href="/MAHLZEIT/assets/vendor-264cd56a.css">
-    <link rel="stylesheet" href="/MAHLZEIT/assets/styles-211f2909.css">
+    <link rel="stylesheet" href="/MAHLZEIT/assets/styles-faccb0eb.css">
   </head>
   <body>
     <header class="header">
@@ -85,13 +85,13 @@
       </svg>
     </button>
 
-    <ul class="nav-list">
-      <li class="nav-link"><a href="#home">Startseite</a></li>
-      <li class="nav-link"><a href="#menu">Menü</a></li>
-      <li class="nav-link"><a href="#story">Über uns</a></li>
-      <li class="nav-link"><a href="#gallery-menu">Galerie</a></li>
-      <li class="nav-link"><a href="#contact">Kontakt</a></li>
-    </ul>
+    <div class="nav-list">
+      <a class="nav-link" href="#home">Startseite</a>
+      <a class="nav-link" href="#menu">Menü</a>
+      <!-- <a class="nav-link" href="#story">Über uns</a> -->
+      <a class="nav-link" href="#gallery-menu">Galerie</a>
+      <a class="nav-link" href="#contact">Kontakt</a>
+    </div>
   </nav>
 </header>
 
@@ -99,46 +99,50 @@
   <div class="container">
     <div class="wrapper-title-home">
       <h1 data-aos="fade-down" data-aos-duration="2000">
-        Authentische ukrainische Küche in Deutschland:
+        Imbiss Mahlzeit – erlesene Gerichte und kulinarische Entdeckungen
       </h1>
-      <h2 data-aos="fade-up" data-aos-duration="2000">
-        Traditionen mit Herz geschaffen
-      </h2>
-      <img
-        data-aos="fade-left"
-        data-aos-duration="2000"
-        src="/MAHLZEIT/assets/main-image-c5e6abd1.jpg"
-        alt="Main image"
-      />
+      <div class="bg-image"></div>
     </div>
+    <div data-aos="fade-up" data-aos-duration="2000" class="services">
+      <h2 data-aos="fade-up" data-aos-duration="1000" class="item">
+        Gesunde essen
+      </h2>
+      <div class="test">
+        <ul
+          data-aos="fade-left"
+          data-aos-duration="2000"
+          class="list-item left"
+        >
+          <li class="item">Fingerfood</li>
+          <li class="item">Essen zum Mitnehmen</li>
+        </ul>
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          class="white-line"
+        ></div>
+        <ul
+          data-aos="fade-right"
+          data-aos-duration="2000"
+          class="list-item right"
+        >
+          <li class="item">Partyservice</li>
+          <li class="item">Frisch gekochte gerichte</li>
+        </ul>
+      </div>
+    </div>
+      <div class="lamp">
 
-    <div class="wrapper-content">
-      <div class="place">
         <img
           data-aos="fade-up"
           data-aos-duration="2000"
-          src="gallery/full/1.jpg"
-          alt="place"
+          src="/MAHLZEIT/assets/services-dc0dd063.jpeg"
+          alt="lamp"
         />
-        <h3 data-aos="fade-up" data-aos-duration="2000">
-          Ein Geschmack, der Heimatgefühl weckt
-        </h3>
-        <p data-aos="fade-up" data-aos-duration="2000">
-          Unsere Gerichte werden mit Liebe und nach authentischen ukrainischen
-          Rezepten zubereitet
-        </p>
-      </div>
-      <div class="lamp">
         <p data-aos="fade-up" data-aos-duration="2000">
           Wir verwenden nur ausgewählte Gewürze, um die Seele der ukrainischen
           Küche zu bewahren
         </p>
-        <img
-          data-aos="fade-up"
-          data-aos-duration="2000"
-          src="gallery/full/2.jpg"
-          alt="lamp"
-        />
       </div>
     </div>
   </div>
@@ -151,9 +155,9 @@
       <div class="wrapper-text-menu">
         <h2 data-aos="fade-up" data-aos-duration="1500">Unser Menü</h2>
         <p data-aos="fade-up" data-aos-duration="1500">
-          Entdecken Sie unsere vielfältige Auswahl an authentischen ukrainischen
-          Gerichten. Ob für den Alltag oder besondere Anlässe – bei uns finden
-          Sie das perfekte Gericht.
+          Entdecken Sie unsere vielfältige Speisenauswahl. Ob für den
+          alltäglichen Gebrauch oder besondere Anlässe, bei uns finden Sie das
+          passende Geschirr.
         </p>
       </div>
       <ul
@@ -192,7 +196,7 @@
   <button class="button-menu js-button-menu">Zeige mehr</button>
 </section>
 
-    <section id="story" class="story">
+    <!-- <section id="story" class="story">
   <div class="container">
     <h2 data-aos="fade-down" data-aos-duration="1500">Unsere Story</h2>
     <div class="svg-wrapper-top">
@@ -210,7 +214,7 @@
         <img
           data-aos-duration="1500"
           data-aos="zoom-in-right"
-          src="/MAHLZEIT/assets/mahlzeit-story-d1b988bc.jpg"
+          src="/img/mahlzeit-story.jpg"
           alt="Unser Restaurant"
         />
       </div>
@@ -284,7 +288,7 @@
     </div>
   </div>
 </section>
-
+ -->
     <section id="gallery-menu" class="gallery container">
   <h2>Galerie</h2>
   <div class="swiper mySwiper">
@@ -311,7 +315,7 @@
       class="container-contant"
     >
       <div class="wrapper-contact">
-        <img src="/MAHLZEIT/gallery/full/6.jpg" alt="place Mahlzeit" />
+        <img src="/MAHLZEIT/assets/time-e8e6abf6.jpeg" alt="time work Mahlzeit" />
         <div class="contact-information">
           <svg
             viewBox="0 0 448 427"
@@ -353,7 +357,7 @@
 
           <!-- <button class="btn-map">Karte</button> -->
         </div>
-        <img src="/MAHLZEIT/gallery/full/4.jpg" alt="location" />
+        <img src="/MAHLZEIT/assets/contact-foto-2f5b9bb9.jpeg" alt="location" />
       </div>
     </div>
   </div>
@@ -599,9 +603,9 @@
         <li class="mob-menu-item">
           <a href="#menu" class="mob-menu-link js-menu-link">Menü</a>
         </li>
-        <li class="mob-menu-item">
+        <!-- <li class="mob-menu-item">
           <a href="#story" class="mob-menu-link js-menu-link">Über uns</a>
-        </li>
+        </li> -->
         <li class="mob-menu-item">
           <a href="#gallery-menu" class="mob-menu-link js-menu-link">Galerie</a>
         </li>
