@@ -9,14 +9,19 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Rufina:wght@400;700&display=swap"
       rel="stylesheet"
     />
-
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     
-    <link rel="stylesheet" href="/assets/styles-31dab0a9.css">
+    <link rel="stylesheet" href="/assets/styles-841dc83b.css">
   </head>
   <body>
-    <section class="main-page-menu">
+    <section class="main-page-menu" data-aos-duration="1500" data-aos="zoom-in">
   <div class="container">
-    <div class="title-full-menu">
+    <div data-aos="fade-down" data-aos-duration="2000" class="title-full-menu">
       <h1>Sehen Sie sich unser neues Menü an</h1>
       <h2>Die frischesten Zutaten für Sie jeden Tag</h2>
     </div>
@@ -29,83 +34,113 @@
     <section class="menu-mahlzeit-full">
   <div class="container">
     <div class="leaves"></div>
-    <div class="wrapper-text-title food-items">
+    <div class="leaves-bottom"></div>
+    <div class="leaves-salate"></div>
+    <div
+      class="wrapper-text-title food-items"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
       <h2>HAUPTGERICHTE</h2>
       <p>
         Genießen Sie unsere köstlichen Hauptgerichte, die mit frischen Zutaten
         und viel Liebe zubereitet werden. Entdecken Sie authentische Aromen und
         lassen Sie sich von unserer Küche verwöhnen.
       </p>
-      <div class="leaves-bottom"></div>
     </div>
-    <ul class="menu-list">
+    <ul class="menu-list" data-aos="fade-up" data-aos-duration="2000">
       <li class="menu-item">
-        <h3>Kiewer Kotelett</h3>
-        <p>Hähnchenbrustfilet, Butter, Ei, Salz, Pfeffer, Öl</p>
+        <div>
+          <h3>Kiewer Kotelett</h3>
+          <p>Hähnchenbrustfilet, Butter, Ei, Salz, Pfeffer, Öl</p>
+        </div>
         <p class="price">3,50 €</p>
       </li>
       <li class="menu-item">
-        <h3>Fleischfrikadellen</h3>
+        <div>
+          <h3>Fleischfrikadellen</h3>
+        </div>
         <p class="price">3,00 €</p>
       </li>
       <li class="menu-item">
-        <h3>Schweinefleisch mit karamellisierten Zwiebeln und Paprika</h3>
-        <p>
-          Schweinefleisch, Paprika, Zwiebeln, Balsamico-Essig, Salz, Gewürze
-        </p>
+        <div>
+          <h3>Schweinefleisch mit karamellisierten Zwiebeln und Paprika</h3>
+        </div>
         <p class="price">6,00 €</p>
       </li>
       <li class="menu-item">
-        <h3>Gefüllte Fleischröllchen</h3>
-        <p>Rindfleisch, Salz, Pfeffer</p>
+        <div>
+          <h3>Gefüllte Fleischröllchen</h3>
+          <p>Rindfleisch, Salz, Pfeffer</p>
+        </div>
         <p class="price">7,00 €</p>
       </li>
       <li class="menu-item">
-        <h3>Kohlrouladen in Tomatensauce (100 gr)</h3>
-        <p>
-          Rindfleisch, Schweinefleisch, Reis, Kohl, Zwiebeln, Karotten,
-          Tomatenmark, Salz, Gewürze
-        </p>
+        <div>
+          <h3>Kohlrouladen in Tomatensauce (100 gr)</h3>
+          <p>
+            Rindfleisch, Schweinefleisch, Reis, Kohl, Zwiebeln, Karotten,
+            Tomatenmark, Salz, Gewürze
+          </p>
+        </div>
         <p class="price">2,20 €</p>
       </li>
       <li class="menu-item">
-        <h3>Pfannkuchen mit Hühnerfleisch</h3>
-        <p>
-          Hühnerfleisch, Zwiebeln, Mehl, Eier, Milch, Salz, schwarzer Pfeffer
-        </p>
+        <div>
+          <h3>Pfannkuchen mit Hühnerfleisch</h3>
+          <p>
+            Hühnerfleisch, Zwiebeln, Mehl, Eier, Milch, Salz, schwarzer Pfeffer
+          </p>
+        </div>
         <p class="price">1,30 €</p>
       </li>
       <li class="menu-item">
-        <h3>Gefüllte Paprika mit Fleisch und Reis</h3>
-        <p>Paprika, Reis, Möhre, Zwiebeln, Tomaten, Salz, Gewürzе</p>
+        <div>
+          <h3>Gefüllte Paprika mit Fleisch und Reis</h3>
+          <p>Paprika, Reis, Möhre, Zwiebeln, Tomaten, Salz, Gewürzе</p>
+        </div>
         <p class="price">3,50 €</p>
       </li>
       <li class="menu-item">
-        <h3>Hähnchenkotelett</h3>
-        <p>Rindfleisch, Käse, Ei, Soße, Zwiebeln, Salz, schwarzer Pfeffer</p>
+        <div>
+          <h3>Hähnchenkotelett</h3>
+          <p>Rindfleisch, Käse, Ei, Soße, Zwiebeln, Salz, schwarzer Pfeffer</p>
+        </div>
         <p class="price">3,50 €</p>
       </li>
       <li class="menu-item">
-        <h3>Schweinekotelett, gebackene Kartoffeln mit Tomaten und Käse</h3>
+        <div>
+          <h3>Schweinekotelett, gebackene Kartoffeln mit Tomaten und Käse</h3>
+        </div>
         <p class="price">6,00 €</p>
       </li>
       <li class="menu-item">
-        <h3>
-          Zucchinipfannkuchen gefüllt mit Hühnerfleisch, Champignons und Käse
-        </h3>
+        <div>
+          <h3>
+            Zucchinipfannkuchen gefüllt mit Hühnerfleisch, Champignons und Käse
+          </h3>
+        </div>
         <p class="price">6,00 €</p>
       </li>
       <li class="menu-item">
-        <h3>Brizol mit Gemüse und Käse</h3>
+        <div>
+          <h3>Brizol mit Gemüse und Käse</h3>
+        </div>
         <p class="price">6,00 €</p>
       </li>
       <li class="menu-item">
-        <h3>Rindfleischfrikadellen mit Champignons in Sahnesauce</h3>
+        <div>
+          <h3>Rindfleischfrikadellen mit Champignons in Sahnesauce</h3>
+        </div>
         <p class="price">6,00 €</p>
       </li>
     </ul>
 
-    <div class="wrapper-text-title food-items">
+    <div
+      class="wrapper-text-title food-items"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
       <h2>SUPPE DES TAGES</h2>
       <p>
         Unsere täglich frisch zubereitete Suppe des Tages ist die perfekte Wahl
@@ -126,7 +161,7 @@
         </svg>
       </div>
     </div>
-    <ul class="menu-list">
+    <ul class="menu-list" data-aos="fade-up" data-aos-duration="2000">
       <li class="menu-item">
         <h3>Borschtsch (300 gr)</h3>
         <p class="price">4,00 €</p>
@@ -137,15 +172,18 @@
       </li>
     </ul>
 
-    <div class="wrapper-text-title food-items">
+    <div
+      class="wrapper-text-title food-items"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
       <h2>SALATE</h2>
       <p>
         Frische, knackige Salate mit sorgfältig ausgewählten Zutaten und
         hausgemachten Dressings. Perfekt für eine leichte und gesunde Mahlzeit.
       </p>
-      <div class="leaves-salate"></div>
     </div>
-    <ul class="menu-list">
+    <ul class="menu-list" data-aos="fade-up" data-aos-duration="2000">
       <li class="menu-item">
         <h3>Rindfleischsalat (100 gr)</h3>
         <p class="price">3,00 €</p>
@@ -156,7 +194,6 @@
       </li>
       <li class="menu-item">
         <h3>Salat mit Roter Bete, Möhre, Essiggurken <br />(100 gr)</h3>
-
         <p class="price">2,50 €</p>
       </li>
       <li class="menu-item">
@@ -165,7 +202,7 @@
       </li>
     </ul>
 
-    <div class="wrapper-text-title">
+    <div class="wrapper-text-title" data-aos="fade-up" data-aos-duration="2000">
       <h2>BEILAGEN</h2>
       <p>
         Leckere Beilagen, die perfekt zu unseren Hauptgerichten passen. Frisch
@@ -173,7 +210,11 @@
         Mahlzeit.
       </p>
     </div>
-    <ul class="menu-list food-items">
+    <ul
+      class="menu-list food-items"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
       <li class="menu-item">
         <h3>Kartoffelpüree</h3>
         <p class="price">3,00 €</p>
@@ -205,14 +246,18 @@
       </li>
     </ul>
 
-    <div class="wrapper-text-title">
+    <div class="wrapper-text-title" data-aos="fade-up" data-aos-duration="2000">
       <h2>GETRÄNKE</h2>
       <p>
         Genießen Sie eine Tasse aromatischen Kaffees oder einen erfrischenden,
         frisch gepressten Saft – perfekt für eine kleine Auszeit.
       </p>
     </div>
-    <ul class="menu-list food-items">
+    <ul
+      class="menu-list food-items"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
       <li class="menu-item">
         <h3>Kaffee</h3>
         <p class="price">2,00 €</p>
@@ -342,5 +387,9 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
