@@ -41,7 +41,7 @@
     <script type="module" crossorigin src="/commonHelpers2.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/vendor-6a60fd2f.js">
     <link rel="stylesheet" href="/assets/vendor-6c5ad137.css">
-    <link rel="stylesheet" href="/assets/styles-e6d1eb67.css">
+    <link rel="stylesheet" href="/assets/styles-bb5ffc91.css">
   </head>
   <body>
     <header class="header">
@@ -122,7 +122,8 @@
   </nav>
 </header>
 
-    <section id="home" class="home">
+    <main>
+      <section id="home" class="home">
   <div class="container">
     <div class="wrapper-title-home">
       <h1 data-aos="fade-down" data-aos-duration="2000">
@@ -173,7 +174,7 @@
   </div>
 </section>
 
-    <section id="menu" class="menu scroll-trigger">
+      <section id="menu" class="menu">
   <div class="container">
     <div class="leaves-top"></div>
     <div>
@@ -230,7 +231,7 @@
   <button class="button-menu js-button-menu">Zeige mehr</button>
 </section>
 
-    <!-- <section id="story" class="story">
+      <!-- <section id="story" class="story">
   <div class="container">
     <h2 data-aos="fade-down" data-aos-duration="1500">Unsere Story</h2>
     <div class="svg-wrapper-top">
@@ -323,16 +324,16 @@
   </div>
 </section>
  -->
-    <section id="gallery-menu" class="gallery scroll-trigger">
-  <h2>Galerie</h2>
+      <section id="fingerfood" class="fingerfood scroll-trigger">
+  <h2>Fingerfood</h2>
   <div class="swiper mySwiper">
-    <div class="swiper-wrapper" id="gallery-container"></div>
+    <div class="swiper-wrapper" id="fingerfood-container"></div>
   </div>
   <div class="swiper-button-next"></div>
   <div class="swiper-button-prev"></div>
 </section>
 
-    <section id="contact" class="contact scroll-trigger">
+      <section id="contact" class="contact scroll-trigger">
   <div class="container">
     <div class="title">
       <h2 data-aos="fade-up" data-aos-duration="1500">Standort</h2>
@@ -403,7 +404,16 @@
   </div>
 </section>
 
-    <section
+      <section id="gallery-menu" class="gallery scroll-trigger">
+  <h2>Galerie</h2>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper" id="gallery-container"></div>
+  </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</section>
+
+      <section
   id="form"
   class="form-section"
   data-aos="zoom-in-down"
@@ -500,6 +510,87 @@
     </div>
   </div>
 </div>
+
+      <div class="burger-menu js-burger-menu">
+  <div class="wrapper-mob-menu">
+    <div class="container-logo-btn">
+      <a class="logo js-logo" href="#hero">
+        <svg
+          class="logo"
+          viewBox="0 0 307 115"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M57 2H245V27H247V2V0H245H57H55V2V27H57V2ZM57 87H55V113V115H57H245H247V113V87H245V113H57V87Z"
+            fill="white"
+          />
+          <text
+            x="49%"
+            y="65%"
+            font-size="50"
+            font-family="Arial, sans-serif"
+            fill="white"
+            text-anchor="middle"
+          >
+            MAHLZEIT
+          </text>
+        </svg>
+      </a>
+      <button
+        type="button"
+        class="btn-close-menu js-close-menu"
+        aria-label="Close menu"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 32 32"
+          width="32"
+          height="32"
+        >
+          <path
+            d="M18 6L6 18"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M6 6L18 18"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+    </div>
+
+    <div class="wrapper-mob-nav">
+      <ul class="mob-menu_list">
+        <li class="mob-menu-item">
+          <a href="#home" class="mob-menu-link js-menu-link">Startseite</a>
+        </li>
+        <li class="mob-menu-item">
+          <a href="#menu" class="mob-menu-link js-menu-link">Menü</a>
+        </li>
+        <!-- <li class="mob-menu-item">
+          <a href="#story" class="mob-menu-link js-menu-link">Über uns</a>
+        </li> -->
+        <li class="mob-menu-item">
+          <a href="#gallery-menu" class="mob-menu-link js-menu-link">Galerie</a>
+        </li>
+        <li class="mob-menu-item">
+          <a href="#contact" class="mob-menu-link js-menu-link">Kontakt</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+    </main>
 
     <footer>
   <div class="container">
@@ -662,86 +753,6 @@
           </p>
         </div>
       </div>
-    </div>
-  </div>
-</div>
-
-
-    <div class="burger-menu js-burger-menu">
-  <div class="wrapper-mob-menu">
-    <div class="container-logo-btn">
-      <a class="logo js-logo" href="#hero">
-        <svg
-          class="logo"
-          viewBox="0 0 307 115"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M57 2H245V27H247V2V0H245H57H55V2V27H57V2ZM57 87H55V113V115H57H245H247V113V87H245V113H57V87Z"
-            fill="white"
-          />
-          <text
-            x="49%"
-            y="65%"
-            font-size="50"
-            font-family="Arial, sans-serif"
-            fill="white"
-            text-anchor="middle"
-          >
-            MAHLZEIT
-          </text>
-        </svg>
-      </a>
-      <button
-        type="button"
-        class="btn-close-menu js-close-menu"
-        aria-label="Close menu"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 32 32"
-          width="32"
-          height="32"
-        >
-          <path
-            d="M18 6L6 18"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-          <path
-            d="M6 6L18 18"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
-      </button>
-    </div>
-
-    <div class="wrapper-mob-nav">
-      <ul class="mob-menu_list">
-        <li class="mob-menu-item">
-          <a href="#home" class="mob-menu-link js-menu-link">Startseite</a>
-        </li>
-        <li class="mob-menu-item">
-          <a href="#menu" class="mob-menu-link js-menu-link">Menü</a>
-        </li>
-        <!-- <li class="mob-menu-item">
-          <a href="#story" class="mob-menu-link js-menu-link">Über uns</a>
-        </li> -->
-        <li class="mob-menu-item">
-          <a href="#gallery-menu" class="mob-menu-link js-menu-link">Galerie</a>
-        </li>
-        <li class="mob-menu-item">
-          <a href="#contact" class="mob-menu-link js-menu-link">Kontakt</a>
-        </li>
-      </ul>
     </div>
   </div>
 </div>
